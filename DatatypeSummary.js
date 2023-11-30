@@ -56,3 +56,32 @@ const heros = ["bhagatsingh","sukhdev","Ngodse"]
  // 'js' is a dynamically typed landuage, because datatype will automatically assigned at the time of code execution.
 
 
+
+
+
+ // =========================  stack and heap memory ============================
+ 
+ //  satck (primitive) , Heap (Non primitive)
+
+ let mycityName = "Ratnagiri"
+
+let anothercity = mycityName
+anothercity = "Thane"
+
+console.log(mycityName);
+console.log(anothercity);
+
+let userOne = {
+   email: "user@google.com",
+   upiId: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "soham@google.com"  // we can acccese the object propertise using '.'
+
+console.log(userOne);
+console.log(userTwo);
+
+// when we put the primitive value in stack memory and change the value we always get a copy of original value
+// and when we put the non primitive value in Heap memory and chenge the value we get chenged original value
