@@ -83,5 +83,5 @@ userTwo.email = "soham@google.com"  // we can acccese the object propertise usin
 console.log(userOne);
 console.log(userTwo);
 
-// when we put the primitive value in stack memory and change the value we always get a copy of original value
-// and when we put the non primitive value in Heap memory and chenge the value we get chenged original value
+// when we put the primitive value in stack memory and change the value we always get a copy of original value.
+// and when we put the non primitive value in Heap memory and chenge the value we get chenged original value.
