@@ -7,7 +7,7 @@ const Arr2 = new Array(1, 2, 3, 4)
 // =========== methods ============
 
 // myArr.push(6)
-// myArr.push(7)
+// myArr.push(7) // Adding new elements to the end of an array
 // myArr.pop()   // for removing last array value
 
 myArr.unshift(0) // adding value starting side in array 
