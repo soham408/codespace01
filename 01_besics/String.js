@@ -22,4 +22,4 @@ console.log(newString.trim());  // use 'trim' to remove unwanted spacese
 
 const url = "https://soham.com/soham%80bambade"
 
-console.log(url.replace('%80', '-'));  // use 'repalce' to modified somethig  
+console.log(url.replace('%80', '-'));  // use 'repalce' to modified something  
