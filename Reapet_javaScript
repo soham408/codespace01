@@ -1,0 +1,234 @@
+let name = "soham"
+let age = 23
+let isloggedIn = false
+
+// console.table([name, age, isloggedIn])
+
+// console.log(typeof null)
+
+let score = false
+
+let valueInNumber = String(score)
+// console.log(typeof valueInNumber)
+// console.log(valueInNumber)
+
+const myname = "soham"
+const myage = 23
+
+// console.log(myname + myage + " bambade");
+
+// console.log(`hello my name is ${myname} and age is ${myage}`);
+
+
+// date and time ========================= 
+
+// let mydate = new Date()
+// console.log(mydate.toString());
+// console.log(mydate.toDateString());
+// console.log(mydate.toISOString());
+// console.log(mydate.toJSON());
+// console.log(mydate.toLocaleString());
+// console.log(mydate.toLocaleDateString());
+// console.log(mydate.toLocaleTimeString());
+// console.log(mydate.toLocaleDateString());
+
+// let mydate = new Date("2024-10-10")
+// console.log(mydate.toString());
+
+
+let myTimeStamp = Date.now()
+// console.log(myTimeStamp);
+
+let newDate = new Date()
+
+// newDate.toLocalString('default',{
+//     weekday: "long"
+// })
+
+// console.log(newDate)
+
+
+// Array======================
+
+const myArr = [0, 1, 2, 3, 4, 5]
+
+// console.log(myArr[5]);
+
+
+// ================ functions ===================
+
+function sayMyname(){
+    console.log("s");
+    console.log("o");
+    console.log("h");
+    console.log("a");
+    console.log("m");  
+};
+
+// sayMyname();
+
+function addNum(num1, num2) {
+    // console.log(num1 + num2);
+    return num1 + num2;
+}
+
+const result = addNum(1, 2);
+// console.log("result: ", result);
+
+function Userlog(msg){
+  return `${msg} just logged in` 
+}
+
+// console.log(Userlog("soham"));
+
+      // rest and spread
+        //  rest
+      function calculateaprice(val1, val2, ...num1){
+        return val1, val2, num1    // explicit return
+        // console.log(val1, val2, ...num1);
+        
+      }
+
+      // console.log(calculateaprice(10, 20, 30, 4440, 55, 60))
+      //  calculateaprice(21, 54, 56, 898, 45)
+
+        // arrow function======
+
+        function thisKeyword(){ 
+          console.log(this); 
+        }
+
+        // thisKeyword()
+
+        const addTwo = (num1, num2) => (num1 + num2)  //  implicit return
+        // console.log(addTwo(2, 3));
+
+        
+        // control flow
+
+        // if (2 === "2") {
+        //   console.log("executed");
+          
+        // } else {
+        //   console.log("not executed");
+          
+        // }
+        
+      // const userEmail = "suraj@gamil"
+
+        // if (userEmail === "soham@gamil" && userEmail === "akankshas") {
+        //    console.log("got email id");
+           
+        // } else {
+        //   console.log("not get email");
+          
+        // }
+        
+        let myArray = ["ak" , "soham" , "bambade"]
+        // console.log(myArray.length);
+        
+        for (let i = 0; i < myArray.length; i++) {
+          const element = myArray[i];
+          // console.log(element);
+          
+        }
+
+        for (let index = 1; index <= 20; index++){
+          if (index == 5) {
+          // console.log(`detected 5`)
+            break
+          }
+            // console.log(`value of i is ${index} `);
+                  
+        }
+
+
+
+        for (let index = 1; index <= 20; index++){
+          if (index == 5) {
+          // console.log(`detected 5`)
+            continue
+          }
+            // console.log(`value of i is ${index} `);
+                  
+        }
+
+        // while loop and 
+
+        // let index = 0
+        // while (index <= 10) {
+        //   console.log(`value of index: ${index}`);
+        //   index ++
+          
+        // }
+
+        let myarr = ['ak', 'soham', 'bambade']
+        let arr = 0
+ while (arr < myarr.length) {
+  // console.log(`value is ${myarr[arr]}`);
+   arr ++ 
+ }
+
+ //do while loop
+
+// let runs = 1
+
+//  do {
+//   console.log(`runs is ${runs}`);
+//   runs++s
+//  } while (runs <= 10);
+
+ // for of loop (for array)
+
+ const looparr = [1, 2, 3, 4, 5] 
+
+ for (const num of looparr) {
+  // console.log(num); 
+  
+ }
+
+ for (let i = 1; i <= 10; i++) {
+  // console.log(`Outer loop value: ${i}`);
+//  for (let j = 1; j <= 10; j++) {
+//   console.log(i + '*' + j + ' = ' + i*j );
+//  }
+  
+}
+
+
+
+// for (let i = 10; i <= 30; i++) {
+//  console.log(`Table of: ${i}`);
+//  for (let j = 10; j <= 30; j++) {
+//   console.log(i*j);
+ 
+// }
+
+
+
+// let num = 10
+// for (let i = 1; i <= 10; i++) {
+//  console.log(`Table of: ${i}`);
+//  for (let j = 1; j <= 10; j++) {
+//   // console.log(i*j);
+ 
+// }
+ 
+// }
+
+
+
+let tbl = 5
+for (let i = 1; i <= 10; i++) {
+console.log(tbl + ' * ' + i + ' = ' + tbl * i);
+  
+} 
+
+// let num = 20
+// for (let i = 1; i <= 10; i++) {
+//   // console.log(`${num} x ${i} = ${num * i}`);
+//   console.log(num + ' * ' + i + ' = ' + num * i);
+  
+// }
+
+// test
