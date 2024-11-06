@@ -266,3 +266,104 @@ const books = [
         })
 
         console.log(userBooks);
+
+        
+        
+        // promise (.then, try, catch, fanally, async, await) 
+
+        const promiseOne = new Promise( (resolve, reject) => {
+          setTimeout( () => {
+              // console.log(`async task is compelete`);
+              resolve()    
+          })
+      })
+      
+      promiseOne.then( () => {
+          // console.log(`promise is consumed`);
+          
+      })
+      
+      new Promise(function (resolve, reject){
+          setTimeout(function () {
+              // console.log('task 2 complete');
+              resolve()
+          }, 1000)
+      }).then(function () {
+          // console.log('task 2 consumed');
+          
+      })
+      
+      const promiseThree = new Promise(function(resolve, reject){
+          setTimeout(function (){
+              resolve({name : 'soham' , age : 23})
+          }, 1000)
+      })
+      // resolve connection with 'then'
+      promiseThree.then(function(user){
+      // console.log(user);
+      
+      })
+      
+      
+      const promiseFour = new Promise(function(resolve, reject){
+          setTimeout(function(){
+              let error = true
+              if (!error) {
+                  resolve({username : 'soham408', pass : 'AsohamB'})
+              } else {
+                  reject('Error : something went wrong')
+              
+              }
+              
+          }, 1000)
+      })
+      
+      promiseFour.then(function(user){
+          // console.log(user);
+          return user.username
+      }).then(function(username){
+          // console.log(username);
+      }).catch(function(error){
+          // console.log(error);
+      }).finally(function(){
+          // console.log('resolve  rejected');
+      })
+      
+      // promise handling with async await
+      
+      const promiseFive = new Promise (function(resolve, reject){
+          setTimeout(function(){
+              let error = false
+              if (!error) {
+                  resolve({username : 'soham408', pass : 'AsohamB'})
+              } else {
+                  reject('Error : js went wrong')
+              }
+          }, 1000)
+      })
+      
+       async function consumePromiseFive(){
+          try {
+              const response = await promiseFive
+              console.log(response);
+          } catch (error) {
+              console.log(error);
+              
+          }
+          
+       }
+      //  consumePromiseFive()
+      
+      async function getallUsers (){
+          try {
+              const response = await fetch('https://api.github.com/users/soham408')
+      
+              const data = await response.json()
+              console.log(data);
+              
+          } catch (error) {
+              console.log('E: ', error);
+              
+          }
+      }
+      getallUsers()
